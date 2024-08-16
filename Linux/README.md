@@ -17,11 +17,13 @@ W celu ustawienia RPZ w serwerze Bind można postępować zgodnie z instrukcją 
 Konkretnie, należy w pliku `/etc/bind/named.conf.local` umieścić:
 
 ```
-response-policy { 
-    zone "rpz"; 
+options {
+    response-policy { 
+        zone "hole.cert.pl";
+    };
 };
 
-zone "rpz.local" {
+zone "hole.cert.pl" {
     type master;
     file "/var/cache/bind/rpz.zone";
     allow-query { localhost; };
