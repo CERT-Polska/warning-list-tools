@@ -32,10 +32,6 @@ Nie możemy zagwarantować ich poprawności oraz kompletności.
 * [6 sposobów wdrożenia Listy Ostrzeżeń CERT Polska w sieci firmowej](https://avlab.pl/lista-ostrzezen-cert-polska-6-sposobow-wdrozenia/) (avlab.pl)
 * [Blokowanie domen z listy HoleCert na Mikrotik, Pihole](https://www.certyficate.it/blokowanie-domen-z-listy-holecert-na-mikrotik/) (certyficate.it)
 
-### Bind
-
-* [RPZ z listą od CERT Polska](https://nfsec.pl/security/6286) (nfsec.pl)
-
 ### Inne rozwiązania
 
 Mimo, że CERT Polska nie wspiera zewnętrznych rozwiązań, dostarczamy listy w różnych formatach w celu uproszczenia integracji z różnymi środowiskami. Przykładowo:
