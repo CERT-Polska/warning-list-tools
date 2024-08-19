@@ -21,11 +21,12 @@ options {
     response-policy { 
         zone "hole.cert.pl";
     };
+    // pozostałe opcje dopasowane do konfiguracji użytkownika
 };
 
 zone "hole.cert.pl" {
     type master;
-    file "/var/cache/bind/rpz.zone";
+    file "/var/cache/bind/hole-cert-pl.rpz";
     allow-query { localhost; };
 };
 ```
@@ -34,8 +35,8 @@ I to wszystko. Pozostaje stworzyć następujący skrypt:
 
 ```bash
 #!/bin/sh
-curl https://hole.cert.pl/domains/v2/domains_rpz.db -o /var/cache/bind/rpz.zone
-/usr/sbin/rndc -q reload rpz
+curl https://hole.cert.pl/domains/v2/domains_rpz.db -o /var/cache/bind/hole-cert-pl.rpz
+/usr/sbin/rndc -q reload hole.cert.pl
 ```
 
 i dodać go do crona.
