@@ -9,10 +9,10 @@ Może w tym celu pomóc instrukcja konfiguracji wybranych [zewnętrznych rozwią
 
 ### Dostawcy
 
-CERT Polska nie utrzymuje obecnie publicznego serwera DNS, który filtruje odpowiedzi pod względem obecności na liście. Istnieją natomiast zewnętrzne rozwiązanie integrujące się z listą CERT Polska. Między innymi są to:
+CERT Polska nie utrzymuje obecnie publicznego serwera DNS, który filtruje odpowiedzi pod względem obecności na Liście. Istnieją natomiast zewnętrzne rozwiązanie integrujące się z Listą CERT Polska. Między innymi są to:
 
-* [Quad9](https://quad9.net/) (ip: 9.9.9.9, 149.112.112.112. DoH: https://dns.quad9.net/dns-query)
-* [dns0.eu](https://www.dns0.eu/) (ip: 193.110.81.0, 185.253.5.0)
+* [Quad9](https://quad9.net/) (IP: 9.9.9.9, 149.112.112.112. DoH: https://dns.quad9.net/dns-query)
+* [dns0.eu](https://www.dns0.eu/) (IP: 193.110.81.0, 185.253.5.0)
 * [nextdns.io](https://nextdns.io/) (usługa komercyjna)
 
 ### Konfiguracja w systemie Android
