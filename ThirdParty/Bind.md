@@ -1,4 +1,6 @@
-# Integracja Listy z serwerem Linux
+# Integracja Listy z serwerem Bind9
+
+### Automatyzacja
 
 Integracja listy na serwerach z rodziny linux jest z reguły bardzo prosta dzięki łatwemu skryptowaniu oraz wsparcia dla plików w formacie RPZ.
 

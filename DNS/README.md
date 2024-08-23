@@ -5,7 +5,7 @@ Listę można prosto zintegrować z dowolnym urządzeniem przez skorzystanie z b
 Warto podkreślić, że to rozwiązanie nie jest bezproblemowe i **nie jest zalecane mniej technicznym użytkownikom**. Przykładowo, po nadpisaniu konfiguracji DNS mogą wystąpić problemy z podłączeniem do HotSpotów, albo z dostępem do zasobów w sieci firmowej po VPN. 
 
 Nie jest to odpowiednia instrukcja jeśli celem jest skonfigurowanie własnego serwera DNS zamiast konfiguracja istniejącego rozwiązania na urządzeniu.
-Może w tym celu pomóc instrukcja konfiguracji [zewnętrznych rozwiązań](../ThirdParty/) albo serwerów marki [Linux](../Linux/) lub [Windows](../WindowsDomain/).
+Może w tym celu pomóc instrukcja konfiguracji wybranych [zewnętrznych rozwiązań](../ThirdParty/), albo serwerów [Windows](../WindowsDomain/).
 
 ### Dostawcy
 

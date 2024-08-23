@@ -61,18 +61,17 @@ Rekomendowana jest integracja listy na poziomie systemu operacyjnego. Jeśli to 
 
 W wielu przypadkach telefon jest już chroniony przez dostawcę sieci. W celu pełniejszej ochrony, można skorzystać z instrukcji [konfiguracji bezpiecznego serwera DNS](./DNS/).
 
-**Integracja Listy z serwerami DNS na serwerach Linux**
+**Integracja Listy z wybranymi zewnętrznymi rozwiązaniami**
 
 <div align="center">
 
   <img src="img/bind.png" width="80px"/>
 </div>
 
-W celu instalacji listy na serwerach z rodziny Linux (np. Bind9) można skorzystać ze skryptów znajdujących się w folderze [Linux](./Linux/).
+CERT Polska nie wspiera oficjalnie zewnętrznych dostawców urządzeń i usług sieciowych.
 
-**Integracja Listy z urządzeniami sieciowymi i zewnętrznymi rozwiązaniami**
-
-CERT Polska nie wspiera oficjalnie żadnych zewnętrznych dostawców urządzeń ani usług sieciowych, ale dla wygody czytelnika dostarczamy listę znanych nam artykułów na temat [integracji Listy z różnymi urządzeniami sieciowymi](./ThirdParty/).
+Dostarczamy jednak instrukcje [integracji Listy z pozostałymi rozwiązaniami](./ThirdParty/),
+oraz w niektórych przypadkach linki do zewnętrznych artykułów.
 
 **Konfiguracja bezpiecznego serwera DNS**
 
