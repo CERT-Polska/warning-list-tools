@@ -12,7 +12,7 @@ Because of the intended audience, the rest of this repository is in Polish.
 
 ## Lista Ostrzeżeń przed niebezpiecznymi stronami CERT Polska
 
-Lista Ostrzeżeń jest nieprzerwanie prowadzona przez CERT Polska od 2020 roku i zawiera **domeny które wprowadzają użytkowników w błąd** i wyłudzają od nich dane. Celem listy jest chronienie użytkowników końcowych przed wejściem na niebezpieczną domenę poprzez zablokowanie jej na poziomie DNS. Dzięki porozumieniom zawiązanym z operatorami telekomunikacyjnymi, wielu użytkowników nieświadomie korzysta z listy za ich pośrednictwem. W celu weryfikacji, czy urządzenie z którego korzystamy jest obecnie chronione przez listę, można skorzystać z serwisu [lista.cert.pl](https://lista.cert.pl).
+Lista Ostrzeżeń jest nieprzerwanie prowadzona przez CERT Polska od 2020 roku i zawiera **domeny, które wprowadzają użytkowników w błąd** i wyłudzają od nich dane. Celem Listy jest chronienie użytkowników końcowych przed wejściem na niebezpieczną domenę poprzez zablokowanie jej na poziomie DNS. Dzięki porozumieniom zawiązanym z operatorami telekomunikacyjnymi, wielu użytkowników nieświadomie korzysta z Listy za ich pośrednictwem. W celu weryfikacji, czy urządzenie z którego korzystamy jest obecnie chronione przez Listę, można skorzystać z serwisu [lista.cert.pl](https://lista.cert.pl).
 
 Więcej informacji o Liście Ostrzeżeń można znaleźć pod adresem [https://cert.pl/lista-ostrzezen/](https://cert.pl/lista-ostrzezen/).
 
@@ -27,7 +27,7 @@ Niezależnie od wybranej metody, **krytycznie ważne** jest, aby automatycznie i
   <img src="img/windows.png" width="80px"/>
 </div>
 
-CERT Polska dostarcza skrypty pozwalające na automatyczne pobieranie i aktualizację listy na komputerach z systemem Windows.
+CERT Polska dostarcza skrypty pozwalające na automatyczne pobieranie i aktualizację Listy na komputerach z systemem Windows.
 
 Dokładne instrukcje znajdują się w folderze [WindowsEndpoint](./WindowsEndpoint/).
 
@@ -38,7 +38,7 @@ Dokładne instrukcje znajdują się w folderze [WindowsEndpoint](./WindowsEndpoi
   <img src="img/ad.png" width="80px"/>
 </div>
 
-CERT Polska dostarcza skrypty pozwalające na automatyczne pobieranie i aktualizację listy w organizacjach korzystających z Active Directory.
+CERT Polska dostarcza skrypty pozwalające na automatyczne pobieranie i aktualizację Listy w organizacjach korzystających z Active Directory.
 
 Dokładne instrukcje znajdują się w folderze [WindowsDomain](./WindowsDomain/).
 
@@ -50,7 +50,7 @@ Dokładne instrukcje znajdują się w folderze [WindowsDomain](./WindowsDomain/)
   <img src="img/chrome.png" width="80px"/>
 </div>
 
-Rekomendowana jest integracja listy na poziomie systemu operacyjnego. Jeśli to niemożliwe albo niewskazane, CERT Polska dostarcza również listę w formacie AdBlock którą można zaimportować do rozszerzenia przeglądarki. Szczegółowe informacje na ten temat można znaleźć na stronie https://cert-polska.github.io/adblock-domain-list/.
+Rekomendowana jest integracja Listy na poziomie systemu operacyjnego. Jeśli to niemożliwe albo niewskazane, CERT Polska dostarcza również Listę w formacie AdBlock, którą można zaimportować do rozszerzenia przeglądarki. Szczegółowe informacje na ten temat można znaleźć na stronie https://cert-polska.github.io/adblock-domain-list/.
 
 **Integracja Listy na telefonie**
 
