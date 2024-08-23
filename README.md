@@ -75,4 +75,4 @@ oraz w niektórych przypadkach linki do zewnętrznych artykułów.
 
 **Konfiguracja bezpiecznego serwera DNS**
 
-Ostatnią opcją na prostą integracje listy jest skorzystanie z bezpiecznego serwera DNS który odrzuca zapytania o domeny znajdujące się na Liście Ostrzeżeń. Można w tym celu zapoznać się z instrukcją [konfiguracji bezpiecznego serwera DNS](./DNS/)
+Ostatnią opcją na prostą integrację Listy jest skorzystanie z bezpiecznego serwera DNS, który odrzuca zapytania o domeny znajdujące się na Liście Ostrzeżeń. Można w tym celu zapoznać się z instrukcją [konfiguracji bezpiecznego serwera DNS](./DNS/)
