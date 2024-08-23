@@ -6,9 +6,9 @@ Z uwagi na ograniczenia techniczne urządzeń Mikrotik, **nie jest możliwe**
 poprawne wdrożenie listy na starszych wersjach systemu operacyjnego.
 
 Najprostszy sposób integracji listy to wejście w widok `Terminal` (w prawym górnym rogu)
-i wykonanie **po kolei** (wklejając po jednej) poniższych poleceń:
+i wykonanie **po kolei** (wklejając po jednej linii) poniższych poleceń:
 
-```
+```txt
 tool/fetch url="https://raw.githubusercontent.com/CERT-Polska/warning-list-tools/master/ThirdParty/cert-pl-chain.pem"
 certificate/import file-name="cert-pl-chain.pem"
 ip/dns/set cache-size=50000KiB
@@ -44,7 +44,7 @@ ip/dns/adlist add url="https://hole.cert.pl/domains/v2/domains_hosts.txt"
 Kolejny krok to import certyfikatów. Należy pobrać Certyfikat CA dla strony
 hole.cert.pl (można go pobrać [STĄD](./cert-pl-chain.pem), albo samodzielnie za pomocą przeglądarki).
 wejść w widok `files`, zuploadować pobrany plik, wejść w widok `System -> Certificates -> Import`,
-wybrać wrzucony właśnie certyfikat i zaimportować go.
+wybrać załadowany właśnie certyfikat i zaimportować go.
 
 Można zrobić to też poleceniem:
 

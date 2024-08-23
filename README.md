@@ -68,7 +68,7 @@ W wielu przypadkach telefon jest już chroniony przez dostawcę sieci. W celu pe
   <img src="img/bind.png" width="80px"/>
 </div>
 
-CERT Polska nie wspiera oficjalnie zewnętrznych dowstawców urządzeń i usług sieciowych.
+CERT Polska nie wspiera oficjalnie zewnętrznych dostawców urządzeń i usług sieciowych.
 
 Dostarczamy jednak instrukcje [integracji Listy z pozostałymi rozwiązaniami](./ThirdParty/),
 oraz w niektórych przypadkach linki do zewnętrznych artykułów.
