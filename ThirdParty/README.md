@@ -12,6 +12,14 @@ Nie możemy zagwarantować ich poprawności oraz kompletności.
 * Rekomendowana częstotliwość aktualizacji listy to co 5 minut, nawet jeśli artykuł sugeruje inny okres.
 * Ponownie: CERT Polska nie gwarantuje poprawności i kompletności linkowanych tutaj materiałów.
 
+### Bind
+
+Opisane przez nas w pliku [Bind](./Bind.md).
+
+### Mikrotik/RouterOS
+
+Opisane przez nas w pliku [RouterOS](./RouterOS.md).
+
 ### FortiGate
 
 * [Zintegruj swojego FortiGate z bazą niebezpiecznych stron od CERT Polska](https://avlab.pl/zintegruj-swojego-fortigate-z-baza-niebezpiecznych-stron-od-cert-polska/) (avlab.pl)
@@ -26,15 +34,6 @@ Nie możemy zagwarantować ich poprawności oraz kompletności.
 ### pfSense
 
 * [6 sposobów wdrożenia Listy Ostrzeżeń CERT Polska w sieci firmowej](https://avlab.pl/lista-ostrzezen-cert-polska-6-sposobow-wdrozenia/) (avlab.pl)
-
-### Mikrotik RouterOS
-
-* [6 sposobów wdrożenia Listy Ostrzeżeń CERT Polska w sieci firmowej](https://avlab.pl/lista-ostrzezen-cert-polska-6-sposobow-wdrozenia/) (avlab.pl)
-* [Blokowanie domen z listy HoleCert na Mikrotik, Pihole](https://www.certyficate.it/blokowanie-domen-z-listy-holecert-na-mikrotik/) (certyficate.it)
-
-### Bind
-
-* [RPZ z listą od CERT Polska](https://nfsec.pl/security/6286) (nfsec.pl)
 
 ### Inne rozwiązania
 
