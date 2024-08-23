@@ -21,7 +21,7 @@ ip/dns/adlist add url="https://hole.cert.pl/domains/v2/domains_hosts.txt"
 
 W tym celu należy zalogować się do panelu administratora i
 przejść w menu do widoku `IP -> DNS`. Na poniższym zrzucie ekranu
-zaznaczono na czerwono przycisk `adlist`. Jeśli brakuje go,
+zaznaczono na czerwono przycisk `Adlist`. Jeśli brakuje go,
 oznacza to, że do wdrożenia Listy potrzebna jest aktualizacja systemu.
 
 ![](./routeros-adlist.png)
@@ -71,9 +71,9 @@ ip/dns/set cache-size=50000KiB
 
 ### Automatyzacja
 
-Domyślnie lista aktualizuje się co godzinę. Naszym zdaniem jest to zdecydowanie za długi czas.
+Domyślnie Lista aktualizowana jest na urządzeniu co godzinę. Naszym zdaniem jest to zdecydowanie za długi czas.
 
-Z tego powodu, rekomendowane jest aktualizowanie listy co 5 minut za pomocą polecenia:
+Z tego powodu, rekomendowane jest aktualizowanie Listy co 5 minut za pomocą polecenia:
 
 ```
 /ip/dns/adlist reload
@@ -91,6 +91,6 @@ system/scheduler add name=certlist-5m interval=5m on-event="certlist-reload"
 
 ### Oficjalna dokumentacja
 
-W razie problemów, można skonsultować oficjalną dokumentację producenta:
+W razie problemów, można skonsultować się z oficjalną dokumentacją producenta:
 
 https://help.mikrotik.com/docs/display/ROS/DNS#DNS-Adlist
