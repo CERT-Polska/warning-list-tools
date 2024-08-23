@@ -2,15 +2,15 @@
 
 ### Automatyzacja
 
-Integracja listy na serwerach z rodziny linux jest z reguły bardzo prosta dzięki łatwemu skryptowaniu oraz wsparcia dla plików w formacie RPZ.
+Integracja Listy na serwerach z rodziny Linux jest z reguły bardzo prosta dzięki łatwemu skryptowaniu oraz wsparcia dla plików w formacie RPZ.
 
-W każdym przypadku należy stworzyć skrypt który będzie uruchamiał się automatycznie co 5 minut. Można to zagwarantować np. za pomocą usługi cron, wykonując jako root polecenie `crontab -e` i dopisując następującą linijkę:
+W każdym przypadku należy stworzyć skrypt, który będzie uruchamiał się automatycznie co 5 minut. Można to zagwarantować np. za pomocą usługi cron, wykonując jako root polecenie `crontab -e` i dopisując następującą linijkę:
 
 ```
 */5 * * * * NAZWA_SKRYPTU
 ```
 
-(gdzie NAZWA_SKRYPTU należy podmienić na ścieżkę do stworzonej w dalszej części skrypt. Należy pamiętać żeby skrypt był wykonywalny, tzn. wykonać na nim `chmod +x skrypt`).
+(gdzie NAZWA_SKRYPTU należy podmienić na ścieżkę do stworzonej w dalszej części skrypt. Należy pamiętać, żeby skrypt był wykonywalny, tzn. wykonać na nim `chmod +x skrypt`).
 
 ### Bind9
 
