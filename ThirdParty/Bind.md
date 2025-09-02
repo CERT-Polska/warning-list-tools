@@ -37,8 +37,11 @@ I to wszystko. Pozostaje stworzyć następujący skrypt:
 
 ```bash
 #!/bin/sh
-curl https://hole.cert.pl/domains/v2/domains_rpz.db | sed 's/ hole.cert.pl./ rpz.hole.cert.pl./g' | /var/cache/bind/hole-cert-pl.rpz
+curl https://hole.cert.pl/domains/v2/domains_rpz.db -o /var/cache/bind/hole-cert-pl.rpz
+sed -i 's/ hole.cert.pl./ rpz.hole.cert.pl./g' /var/cache/bind/hole-cert-pl.rpz
 /usr/sbin/rndc -q reload hole.cert.pl
 ```
 
 i dodać go do crona.
+
+*Użycie komendy `sed` jest konieczne ze względu na limitacje formatu danych RPZ. Zostanie to poprawione podczas najbliższej aktualizacji formatu.*
