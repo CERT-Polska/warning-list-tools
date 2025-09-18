@@ -14,6 +14,7 @@ CERT Polska nie utrzymuje obecnie publicznego serwera DNS, który filtruje odpow
 * [Quad9](https://quad9.net/) (IP: 9.9.9.9, 149.112.112.112. DoH: https://dns.quad9.net/dns-query)
 * [dns0.eu](https://www.dns0.eu/) (IP: 193.110.81.0, 185.253.5.0)
 * [nextdns.io](https://nextdns.io/) (usługa komercyjna)
+* [DNS4EU](https://www.joindns4.eu/learn/dns4eu-public-service-launched) (IP: 86.54.11.1, DoH: https://protective.joindns4.eu/dns-query)
 
 ### Konfiguracja w systemie Android
 
