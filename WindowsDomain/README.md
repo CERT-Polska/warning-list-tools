@@ -12,6 +12,14 @@ wykorzystuje fakt, że w większości instalacji domen Windowsowych serwer DNS j
 
 Najprostszą metodą instalacji jest pobranie i uruchomienie skryptu [Install-CertListaToDnsPolicy.ps1](./Install-CertListaToDnsPolicy.ps1) na kontrolerze domeny, jako użytkownik z prawami Administratora Domeny.
 
+W tym celu należy pobrać plik `https://github.com/CERT-Polska/warning-list-tools/blob/master/WindowsDomain/Install-CertListaToDnsPolicy.ps1` na dysk, uruchomić konsolę PowerShell, oraz wykonać skrypt poleceniem
+
+```powershell
+powershell -NoProfile -ExecutionPolicy bypass .\Install-CertListaToDnsPolicy.ps1
+```
+
+Dla administratorów którzy potrzebują większej kontroli nad procesem aktualizacji zalecamy proces instalacji ręcznej.
+
 ## Instalacja ręczna
 
 Skrypt `Install-CertListaToDnsPolicy.ps1` ma dwa główne zadania:
@@ -23,7 +31,8 @@ Oba te kroki można wykonać ręcznie:
 
 * Należy pobrać skrypt [Update-CertListaToDnsPolicy.ps1](./Update-CertListaToDnsPolicy.ps1) i umieścić go w folderze `C:\Windows\Program Files\`.
   * Prawa do edycji pliku powinni mieć jedynie administratorzy. Jest to domyślne zachowanie w przypadku umieszczenia pliku w folderze jako administrator.
-* Należy stworzyć scheduled task działający z prawami administratora wykonujący polecenie `powershell` z parametrem `-File "C:\Windows\Program Files\Update-CertListaToDnsPolicy.ps1"` co 5 minut.
+  * Można również wybrać inny folder. W takim wypadku należy dostosować ścieżkę scheduled taska z kolejnego punktu.
+* Należy stworzyć scheduled task działający z prawami administratora wykonujący polecenie `powershell` z parametrem `-NoProfile -ExecutionPolicy Bypass -File "C:\Program Files\Update-CertListaToDnsPolicy.ps1"` co 5 minut.
 
 ## Weryfikacja instalacji
 
@@ -39,7 +48,7 @@ Jeśli weryfikacja nie powiodła się, w celu znalezienia problemu może pomóc:
 * Uruchomienie polecenia `ipconfig /flushdns`, w celu upewnienia się że adres złośliwej domeny nie znajduje się w lokalnym cache DNS.
 * Upewnienie się, że plik `C:\Windows\Program Files\Update-CertListaToDnsPolicy.ps1` istnieje.
 * Uruchomienie skryptu `C:\Windows\Program Files\Update-CertListaToDnsPolicy.ps1` ręcznie i sprawdzenie logów na standardowym wyjściu.
-* Sprawdzenie logów Task Schedulera - w tym celu należy uruchomić interfejs Task Schedulera (np. kombinacją `Windows+r`, `taskschd.msc`, `enter`), znaleźć task `CertListaToHosts` i sprawdzić status taska.
+* Sprawdzenie logów Task Schedulera - w tym celu należy uruchomić interfejs Task Schedulera (np. kombinacją `Windows+r`, `taskschd.msc`, `enter`), znaleźć task `CertListaToHosts` i sprawdzić status zadania.
 * Przejrzenie istniejących polityk: można w tym celu wykonać powershellowe polecenie `Get-DnsServerQueryResolutionPolicy | Where-Object { $_.Name.Startswith("CERTPL_") }`. Wynikiem powinna być długa na około 50 tysięcy domen lista polityk.
 * Sprawdzenie, czy jedynymi skonfigurowanymi resolverami DNS na komputerach użytkowników są serwery AD. W tym celu można wykonać polecenie `ipconfig /all` i upewnić się że wszystkie wpisy w `DNS Servers` kierują na serwery domeny. W szczególności, wpisy np. `1.1.1.1` albo `8.8.8.8` oznaczają że blokowanie *nie* będzie działać poprawnie.
 
