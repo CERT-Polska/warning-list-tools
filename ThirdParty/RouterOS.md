@@ -9,8 +9,8 @@ Najprostszy sposób integracji Listy to wejście w widok `Terminal` (w prawym g�
 i wykonanie **po kolei** (wklejając po jednej linii) poniższych poleceń:
 
 ```txt
-tool/fetch url="https://raw.githubusercontent.com/CERT-Polska/warning-list-tools/master/ThirdParty/cert-pl-chain.pem"
-certificate/import file-name="cert-pl-chain.pem"
+tool/fetch url="https://cacerts.digicert.com/DigiCertGlobalRootG2.crt.pem"
+certificate/import file-name="DigiCertGlobalRootG2.crt.pem"
 ip/dns/set cache-size=50000KiB
 system/script/add name="certlist-reload" source="ip/dns/adlist reload"
 system/scheduler add name=certlist-5m interval=5m on-event="certlist-reload"
@@ -41,16 +41,19 @@ ip/dns/adlist add url="https://hole.cert.pl/domains/v2/domains_hosts.txt"
 
 ### Import certyfikatu CA
 
-Kolejny krok to import certyfikatów. Należy pobrać Certyfikat CA dla strony
-hole.cert.pl (można go pobrać [STĄD](./cert-pl-chain.pem), albo samodzielnie za pomocą przeglądarki).
-Następnie wejść w widok `files`, zuploadować pobrany plik, wejść w widok `System -> Certificates -> Import`,
-wybrać załadowany właśnie certyfikat i zaimportować go.
+Kolejny krok to import certyfikatu głównego (root CA), którym podpisany jest
+certyfikat strony hole.cert.pl. Jest to certyfikat **DigiCert Global Root G2**.
+Jest on ważny do 2038 roku, więc nie trzeba go regularnie aktualizować.
+
+Certyfikat można pobrać ze [strony DigiCert](https://www.digicert.com/kb/digicert-root-certificates.htm)
+(plik `DigiCertGlobalRootG2.crt.pem`). Następnie wejść w widok `files`, zuploadować pobrany plik,
+wejść w widok `System -> Certificates -> Import`, wybrać załadowany właśnie certyfikat i zaimportować go.
 
 Można zrobić to też poleceniem:
 
 ```
-tool/fetch url="https://raw.githubusercontent.com/CERT-Polska/warning-list-tools/master/ThirdParty/cert-pl-chain.pem"
-certificate/import file-name="cert-pl-chain.pem" 
+tool/fetch url="https://cacerts.digicert.com/DigiCertGlobalRootG2.crt.pem"
+certificate/import file-name="DigiCertGlobalRootG2.crt.pem"
 ```
 
 **To dalej nie koniec** - Lista zaimportuje się, ale tylko częściowo. 
